@@ -1,6 +1,6 @@
 {
   "name": "com.rraptor.events",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "RR Events",
   "description": "Provides components for building event-driven architectures",
   "unity": "2019.1",
