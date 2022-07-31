@@ -1,8 +1,16 @@
+using System;
+using System.Collections.Generic;
+
 namespace RR.Events
 {
     public class EventBroker
     {
         private System.Collections.Generic.Dictionary<System.Type, IBaseEvent> _eventDict;
+
+        public EventBroker()
+        {
+            _eventDict = new Dictionary<Type, IBaseEvent>();
+        }
 
         public void Subscribe<T>(System.Action<T> listener) where T : IEventData
         {
